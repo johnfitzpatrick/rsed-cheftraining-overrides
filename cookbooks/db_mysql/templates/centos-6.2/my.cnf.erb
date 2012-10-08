@@ -43,7 +43,7 @@ bind-address            = <%= node[:db_mysql][:bind_address] %>
 # * Fine Tuning
 #
 key_buffer              = <%= node[:db_mysql][:tunable][:key_buffer] %>
-max_allowed_packet      = 16M
+max_allowed_packet      = 32M
 thread_stack            = 192K
 thread_cache_size       = <%= node[:db_mysql][:tunable][:thread_cache_size] %>
 myisam-recover          = BACKUP
