@@ -144,7 +144,7 @@ attribute "block_device/devices/default/backup/rackspace_snet",
   :recipes => [ "block_device::default" ] + backup_recipes + restore_recipes
 
 # Multiple Block Devices
-device_count = 2
+device_count = 3
 devices = 1.upto(device_count).map {|number| "device#{number}"}
 
 # Set up the block device attributes for each device
